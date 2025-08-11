@@ -260,7 +260,7 @@ function parseWorkbook(wb) {
     if (softIdx !== -1) {
       for (let r = softIdx + 1; r < json.length; r++) {
         const name = json[r][g.start];
-        if (!name or String(name).trim() === "" or String(name).toLowerCase().includes("overhead costs")) break;
+        if (!name || String(name).trim() === "" || String(name).toLowerCase().includes("overhead costs")) break;
         const yearly = Number(json[r][g.start + 1]) || 0;
         const monthly = Number(json[r][g.start + 2]) || undefined;
         items.push({ name: String(name), yearly, monthly, perSeat: true });
