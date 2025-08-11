@@ -402,7 +402,7 @@ export default function App() {
               <Button className="bg-white/70 border border-slate-200" onClick={resetAll}><RefreshCcw className="w-4 h-4 mr-2" /> Reset</Button>
             </div>
           </div>
-        </motion_div>
+        </motion.div>
 
         <div className="grid md:grid-cols-3 gap-5 mt-6">
           <Card className="md:col-span-1">
